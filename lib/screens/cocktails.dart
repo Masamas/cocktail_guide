@@ -1,4 +1,5 @@
 import 'package:cocktail_guide/models/cocktail.dart';
+import 'package:cocktail_guide/screens/cocktail_detail.dart';
 import 'package:cocktail_guide/services/cocktail_service.dart';
 import 'package:cocktail_guide/widgets/alcohol_indicator.dart';
 import 'package:flutter/material.dart';
@@ -28,8 +29,7 @@ class _CocktailsState extends State<Cocktails> {
   }
 
   void _goToCocktailDetail(BuildContext context, Cocktail cocktail) {
-    // TODO: Navigiert hier zu eurem Screen
-    // Navigator.push(context, MaterialPageRoute(builder: (context) => CocktailDetail(cocktail: cocktail)));
+    Navigator.push(context, MaterialPageRoute(builder: (context) => CocktailDetail(cocktail: cocktail)));
   }
 
   Widget _buildCocktailItem(BuildContext context, int index) {
