@@ -28,6 +28,7 @@ class _CocktailsState extends State<Cocktails> {
   }
 
   void _goToCocktailDetail(BuildContext context, Cocktail cocktail) {
+    // TODO: Navigiert hier zu eurem Screen
     // Navigator.push(context, MaterialPageRoute(builder: (context) => CocktailDetail(cocktail: cocktail)));
   }
 
